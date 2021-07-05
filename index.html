@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grades-Tracker</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <fieldset>
+<form id='gradeForm'>
+<label > Student Name : </label>
+<input type="text" name="sName" >
+
+<label > Course: </label>
+<select name="Course" > 
+<option value="Arabic"> Arabic</option>
+<option value="English"> English</option>
+<option value="Math">Math</option>
+<option value=" Science">  Science</option>
+<option value="Art"> Art</option>
+
+</select>
+<button id="addStudent" type='click'> Add Student </button> 
+<button id="clearAll" type="click">Remove All Students  </button>
+
+</form>
+
+        </fieldset>
+
+
+        <table class="table">
+<thead>
+    <th> Student Name </th>
+    <th> Student Grade</th>
+    <th> Course</th>
+</thead>
+<tbody id="studentTabel"></tbody>
+        </table>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
